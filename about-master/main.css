@@ -1,0 +1,148 @@
+*{
+  /* border: 2px green dashed; */
+}
+body{
+    background-color: rgba(255, 251, 229, 0.603);
+    font-family: 'Raleway', sans-serif;
+}
+
+svg{
+    transform: scale(.5);
+}
+h1{
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  font-size: 100px;
+}
+
+li{
+    display: inline;
+    padding: 25px;
+    font-size: 2em;
+
+}
+
+.container{
+  min-width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+      "icon"
+      "nav"
+      "potrait"
+      "content"
+      "footer";
+}
+.icon,
+ nav,
+ .content,
+ footer{
+   padding-left: 3em;
+   padding-right: 3em;
+   text-align: center;
+   grid-area: "footer";
+}
+
+.icon svg {
+  width:40%;
+  padding-bottom: 0%;
+}
+
+nav{
+  text-align:center;
+  grid-area: nav;
+  padding-top: 0%;
+}
+nav ul{
+list-style-type: none;
+display: flex;
+justify-content: space-between;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+  }
+  
+a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: rosybrown;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+  footer{
+    grid-area:footer;
+  }
+  footer p{
+    font-size:2em;
+  }
+  
+  footer li {
+    display:inline;
+  }
+  
+  footer ul {
+    max-width: 640px;
+    margin: 2em auto;
+    padding:0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 6px;
+  }
+  footer ul li{
+    list-style: none;
+    align-self:flex-end;
+  }
+  footer ul li a {
+    text-decoration:none;
+    color: black;
+    opacity:.6;
+    transition: .3s;
+  }
+  footer ul li a:hover {
+    text-decoration:none;
+    color: rgb(163, 83, 83);
+  }
+  
+  footer svg {
+    width: 100px;
+  }
+  
+  footer p{
+    font-size: 1em;
+  }
+  @media (min-width:1040px){
+    .container{
+      width:100%;
+      height:100vh;
+      display:grid;
+      grid-template-columns: 300px 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+            "icon"
+            "nav"
+            "potrait"
+            "content"
+            "footer";
+    }
+.icon{
+  width: 500px;
+}
+.potrait{
+  width: 100px;
+  grid-area: "portrait";
+}
+.content img{
+  border-radius: 16%;
+}

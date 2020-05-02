@@ -1,0 +1,355 @@
+*{
+    /* outline: 2px dashed green; */
+    margin: 0;
+    padding:0;
+}
+/* @media screen and (max-width: 600px) {
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "q"
+        "h"
+        "e"
+        "b"
+        "f";
+}
+ */
+/* step one - build your grid */
+.wrapper {
+    display: grid;
+    /* what makes it so we can acess css grid function */
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 100px;
+    border: 2px solid #f76707;
+    border-radius: 5px;
+    background-image: url("assets/graphicdesigner.svg");
+    /* ahhhh idk how to make the svg a background ! */
+  }
+.designbackground{ background-image: url("assets/graphicdesigner.svg");
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    z-index: 1; 
+} 
+
+/* .box1 {
+background-color: #51ecf1c7;  
+grid-column-start: 8;
+grid-column-end: 4;
+grid-row-start: 1;
+grid-row-end: 3;
+z-index: 2;
+} */
+
+.box2 {
+background-color: #25c2c7b6;  
+grid-column-start: 1;
+grid-row-start: 2;
+grid-row-end: 4;
+z-index: 1;
+}
+.box5{
+background-color: chartreuse;
+grid-column-start: 6;
+grid-row-start: 1;
+grid-row-end:  30;
+
+}
+
+.box {
+/* styling that decides everything */
+border: 2px solid #ffa94d;
+border-radius: 5px;
+padding: 2em;
+color: #67d626;
+padding-top: 0mm;
+}
+  
+.wrapper {
+    padding:10%;
+    /* height: 100%; */
+    display: grid;
+    grid-gap: 25px;
+    /* this will be  the same for everyone */
+    grid-template-columns: (1fr);
+    /* this will be customized, based on your grid, use pixels or % */
+    grid-template-rows: auto;
+    /* use letters from step 2 to build the grid */
+    
+    background-color: rgb(239, 171, 174);
+}
+
+
+
+/* .graphicdesignersvg{
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: auto;
+    z-index: 1; */
+
+    .box1 {
+    display: grid;
+    background-color: #51ecf1c7;  
+    grid-column-start: 8;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    z-index: 2;
+  }
+  
+ 
+      
+
+
+.li{
+    font-weight: 500;
+    padding:10px;
+}
+
+.date{
+    font-weight: 300;
+}
+body{
+    font-size: 4em;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+   
+  
+}
+
+
+ul{
+    list-style: none;
+}
+
+
+h1{
+    font-size: 3em;
+    padding-bottom: 10px;
+}
+
+h2{
+    padding-top:25px;
+    padding-bottom: 15px;
+}
+
+h3{
+    padding-top:45px;
+}
+
+
+
+
+/* step three - build a grid that becomes active when the pixels are 800px or less */
+    @media screen and (max-width: 900px) {
+        .wrapper {
+            /* height: 100%; */
+            display: grid;
+            background-color: teal;
+            grid-gap: 3px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "x"
+                "a"
+                "b"
+                "c"
+                "d"
+                "e"
+                "f"
+                "g"
+                "h";
+            
+        }
+        .photo{
+            grid-area: x;
+        }
+        .education{
+            grid-area:a;
+        }
+        .professionalprofile{
+            grid-area:b;
+        }
+        .skills{
+            grid-area:c;
+        }
+        .workexperience{
+            grid-area:d;
+        }
+        .relevantproject1{
+            grid-area:e;
+        }
+        .relevantproject2{
+            grid-area:f;
+        }
+        .contact{
+            grid-area:g;
+        }
+        .icon-container{
+            grid-area:h;
+        }
+       
+    }
+    
+    .wrapper {
+        padding:10%;
+        /* height: 100%; */
+        display: grid;
+        grid-gap: 25px;
+        /* this will be  the same for everyone */
+        grid-template-columns: repeat(12, 1fr);
+        /* this will be customized, based on your grid, use pixels or % */
+        grid-template-rows: 100px;
+        border-radius: 5px;
+        background-image: url("assets/graphicdesigner.svg");
+        /* use letters from step 2 to build the grid */
+        
+        background-color: rgb(239, 171, 174);
+    }
+
+/* step 1 - assign each of your sections a letter */
+.professionalprofile {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    z-index: 1;
+    
+}
+
+.education {
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    z-index: 1;
+    /* border-bottom: 5px solid  lightpink; */
+    padding-top: 150px;
+    /* border-right: 4px solid white; */
+    padding-right: 20px;
+}
+
+.skills {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    z-index: 1;
+    /* padding-top: 25px; */
+    /* padding-left: 50px; */
+    font-family: 'Lato', sans-serif;
+    list-style-type: square;
+    }
+
+.workexperience{
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 6;
+    grid-row-end: 4;
+    z-index: 1;
+    /* border-bottom: 5px solid lightseagreen; */
+   
+}
+
+.relevantproject1{
+    padding-top: 25px ;
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    z-index: 1;
+    
+}
+
+.netdate{
+    font-weight: 100;
+}
+
+.marketdate{
+    font-weight: 100;
+}
+.relevantproject2{
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 10;
+    grid-row-end: auto;
+    z-index: 1;
+}
+
+.wit{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 20px;
+    font-family:playfair display;
+    grid-column-start: 7;
+    grid-column-end: 14;
+    grid-row-start: 4;
+    grid-row-end: auto;
+    z-index: 1;
+}
+}
+
+.degree{
+    font-weight: regular;
+}
+
+
+.profprof{
+    font-family:playfair display;
+}
+
+.skilltitle{
+    font-family:playfair display;
+}
+
+.worktitle{
+    font-family:playfair display;
+}
+
+.edutitle{
+    font-family:playfair display;
+}
+
+.reltitle{
+    font-family:playfair display;
+}
+
+.photo{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    z-index: 1;
+
+}
+.contact{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 9;
+    grid-row-end: 12;
+    z-index: 1;
+    font-family: playfair display;
+}
+
+.icon-container{
+    width: 100%;
+    /* height: 100px; */
+    display:grid;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 11;
+    z-index: 1;
+}
+   
+
+
+
+
+
+    
