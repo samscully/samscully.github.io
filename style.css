@@ -53,6 +53,8 @@ border-radius: 1%;
 }
 .box1 {
   grid-area: a;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
 
 }
 
@@ -62,6 +64,8 @@ border-radius: 1%;
 
 .box3 {
   grid-area: c;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
 }
 
 .box4 {
@@ -70,6 +74,8 @@ border-radius: 1%;
 
 .box5 {
   grid-area: e;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
 }
 
 .box6 {
@@ -454,6 +460,10 @@ nav{
     }
     
  } 
-
+.zine{
+  text-align: center;
+padding-left: 30%;
+font-size: .7em;
+}
 
 
