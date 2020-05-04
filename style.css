@@ -466,4 +466,9 @@ padding-left: 30%;
 font-size: .7em;
 }
 
-
+.comingsoon{
+  padding-top: 500px;
+  text-align: center;
+  position: relative;
+  font-size: 2em; 
+}
