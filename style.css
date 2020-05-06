@@ -461,14 +461,51 @@ nav{
     
  } 
 .zine{
+  padding-top: 100px;
   text-align: center;
-padding-left: 30%;
-font-size: .7em;
+font-size: 2em;
 }
 
 .comingsoon{
-  padding-top: 500px;
+  padding-top: 70px;
   text-align: center;
   position: relative;
   font-size: 2em; 
+}
+.shoptext{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.subparagraphs{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  font-family: 'Lato', sans-serif;
+}
+.beehappy{
+  padding-top: 70px;
+  text-align: center;
+  position: relative;
+  font-size: 2em; 
+}
+
+.typeposter{
+  padding-top: 70px;
+  font-size: 2em;
+  text-align: center;
+  padding-right: 100px;
+  
+}
+
+.abouttext{
+  font-family: 'Lato', sans-serif;
+}
+
+.resumeabout{
+padding-top: 30px;
+font-family: 'Lato', sans-serif;
+font-weight: 600;
+font-style: italic;
 }
