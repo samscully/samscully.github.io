@@ -1,10 +1,12 @@
-*{
-  /* border: 2px green dashed; */
-}
+/* *{
+  border: 2px green dashed;
+} */
 body{
     background-color: rgba(255, 251, 229, 0.603);
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     padding-top: 20%;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
 }
 
 svg{
@@ -37,6 +39,9 @@ li{
       "potrait"
       "content"
       "footer";
+}
+.content{
+  align-content: center;
 }
 .icon,
  nav,
@@ -85,9 +90,11 @@ a:visited {
 
   footer{
     grid-area:footer;
+    padding-top: 100px;
   }
   footer p{
-    font-size:2em;
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
   }
   
   footer li {
@@ -142,14 +149,19 @@ a:visited {
 .icon{
   width: 500px;
 }
-.potrait{
-  width: 100px;
-  grid-area: "portrait";
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+
 .content img{
-  border-radius: 16%;
+  width: 400px;
+  margin-left: 400px;
+  margin-right: 400px;
+  grid-area: "portrait";
+  display: grid;
+  
+
+.abouttext{
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 100px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
 }
