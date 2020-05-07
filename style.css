@@ -476,6 +476,14 @@ font-size: 2em;
   margin-left: 100px;
   margin-right: 100px;
 }
+
+.zine{
+  padding-top: 70px;
+  text-align: center;
+  position: relative;
+  font-size: 2em; 
+  padding-right: 80px;
+}
 .subparagraphs{
   text-align: center;
   padding-top: 20px;
@@ -509,3 +517,50 @@ font-family: 'Lato', sans-serif;
 font-weight: 600;
 font-style: italic;
 }
+
+.colorChange{
+  width:50%;
+}
+
+#Layer_1{
+  -webkit-animation: color 3s ease infinite;
+  -o-animation: color 3s ease infinite;
+  -moz-animation: color 3s ease linear infinite;
+  /* where we build the animation */
+  animation: color 6s ease infinite;
+  
+}
+/* where we build the keyframes */
+@keyframes color {
+  0%, 100%{
+  fill: rgb(221, 101, 88)
+  }
+  50% {
+  fill: rgb(238, 166, 73)
+  
+    }
+  }
+
+
+  background: linear-gradient(358deg, #f86c6c, #f8f36c);
+  background-size: 400% 400%;
+  
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  
+  @-webkit-keyframes AnimationName {
+      0%{background-position:51% 0%}
+      50%{background-position:50% 100%}
+      100%{background-position:51% 0%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:51% 0%}
+      50%{background-position:50% 100%}
+      100%{background-position:51% 0%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:51% 0%}
+      50%{background-position:50% 100%}
+      100%{background-position:51% 0%}
+  }
