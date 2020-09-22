@@ -475,6 +475,7 @@ font-size: 2em;
 .shoptext{
   margin-left: 100px;
   margin-right: 100px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .zine{
@@ -523,22 +524,22 @@ font-style: italic;
 }
 
 #Layer_1{
-  animation:color 5s linear infinite;
-  @-webkit-keyframes color {
+  animation:color 5s linear infinite;}
+   @keyframes color {
     0% {
-     fill:#FFFFFF;
+     fill:rgb(241, 223, 139);
       }
     12% {
-    color:orange;
+    color:rgb(255, 0, 157);
     }
     24% {
-    color: yellow;
+    color: rgb(243, 110, 1);
     }
     36% {
-    color: green;
+    color: rgb(223, 82, 199);
     }
     48% {
-    color: blue;
+    color: rgb(255, 0, 149);
     }
       60% {
     color:indigo;
@@ -551,5 +552,5 @@ font-style: italic;
     }
     }
     
-}
+
  
